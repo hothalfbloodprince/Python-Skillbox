@@ -14,22 +14,22 @@ def check_winner(field):
     # Проверка по столбцам
     for col in range(k):
         column = [field[row][col] for row in range(k)]
-        if column.count("X") == k:
+        if column.count('X') == k:
             return 'X'
-        elif column.count("O") == k:
+        elif column.count('O') == k:
             return 'O'
 
     # Проверка по диагоналям
     diag_one = [field[i][i] for i in range(k)]
-    if diag_one.count("X") == k:
+    if diag_one.count('X') == k:
         return 'X'
-    elif diag_one.count("O") == k:
+    elif diag_one.count('O') == k:
         return 'O'
 
     diag_two = [field[i][k-1-i] for i in range(k)]
-    if diag_two.count("X") == k:
+    if diag_two.count('X') == k:
         return 'X'
-    elif diag_two.count("O") == k:
+    elif diag_two.count('O') == k:
         return 'O'
 
     return 'Ничья'
