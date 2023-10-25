@@ -44,7 +44,7 @@ class Stack:
         while current:
             print(current.data)
             current = current.pref
-"""
+
 stack = Stack()
 stack.push(1)
 stack.push(2)
@@ -54,4 +54,3 @@ print(stack.pop())
 print(stack.pop())
 print(stack.pop())
 print(stack.pop())
-"""
